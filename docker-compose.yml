@@ -8,4 +8,4 @@ services:
                 volumes:
                         - ./app:/app
                 command: >
-                        sh -c python app.py"
+                        sh -c "python app.py"
