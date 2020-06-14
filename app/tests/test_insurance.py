@@ -1,6 +1,9 @@
 import pytest
 
 
-class InsuranceTest:
+class TestInsurance:
+    def setUp(self):
+        self.insurance = Insurance()
+
     def test_one(self):
-        assert 1 == 1
+        assert self.insurance.get_auto() == None
